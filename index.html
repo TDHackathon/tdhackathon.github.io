@@ -1,0 +1,153 @@
+<!doctype HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TD Hackathon</title>
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image" /> 
+
+        <link rel="stylesheet" href = "css/style.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="background-overlay-dots"></div>
+            <div class="background-overlay"></div>
+            <div class ="container-fluid">
+
+                <div class = "col-lg-8 col-lg-offset-2">
+                    <img src="img/td.png" class="logo img-responsive"/>
+                    <h3>TD Hackathon</h3>
+                    <h3>Learn. Collaborate. Create.</h3>
+                    <h4>May 30-31, 2015 | University of Waterloo</h4>
+                    <button class = "btn">Sign me up!</button>
+
+                </div>
+            </div>
+
+        </header>
+        <section class="about container-fluid">
+            <div class = "row">
+                <div class = "col-lg-8 col-lg-offset-2">
+                    <h1>Schedule</h1>
+                </div>
+            </div>
+            <div class ="row">                
+                <div class = "col-lg-4 col-lg-offset-2">
+                    <p>Saturday</p>
+                    <table class = "table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 11:30</td>
+                            <td>Registration and Team Formation</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 12:00</td>
+                            <td>Opening Ceremonies</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 - 14:00</td>
+                            <td>Lunch!</td>
+                        </tr>
+                        <tr>
+                            <td>19:00 - 20:00</td>
+                            <td>Dinner</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class = "col-lg-4">
+                    <p>Sunday</p>
+                    <table class = "table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr>
+                            <td>0:00 - 0:30</td>
+                            <td>Snack 1</td>
+                        </tr>
+                        <tr>
+                            <td>4:30 - 5:00</td>
+                            <td>Snack 2</td>
+                        </tr>
+                        <tr>
+                            <td>9:00 - 10:00</td>
+                            <td>Breakfast</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 13:30</td>
+                            <td>Lunch, Hacking Ends</td>
+                        </tr>
+                        <tr>
+                            <td>13:30 - 14:30</td>
+                            <td>Demos by Top 10</td>
+                        </tr>
+                        <tr>
+                            <td>14:30 - 15:00</td>
+                            <td>Closing Ceremonies</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class = "faq container-fluid">
+            <div class = "row">
+                <div class = "col-lg-8 col-lg-offset-2 white_tint">
+                    <h1>FAQs</h1>
+                    <p class = "question">Q: Who can come?</p>
+                    <p class = "answer">A: As long as you're a University of Waterloo student, feel free to signup!</p>
+                    
+                    <p class = "question">Q: How much is this going to cost?</p>
+                    <p class = "answer">A: It's going to be absolutely free! Food will be provided.</p>    
+                    
+                    <p class = "question">Q: How big can teams be?</p>
+                    <p class = "answer">A: Teams can be up to 4 people! You can also hack by yourself if you'd like.</p>  
+                    
+                    <p class = "question">Q: Where is this happening?</p>
+                    <p class = "answer">A: We'll be in Mathematics 3 1006.</p>  
+                    
+                    <p class = "question">Q: What should I bring?</p>
+                    <p class = "answer">A: Whatever you need to hack (laptop, mouse, charger, etc.)! Feel free to bring a mug for coffee and snacks if you need that extra food. </p>  
+                </div>
+            </div>
+        </section>
+        <footer class = "container-fluid">
+            <div class="row">
+                <div class = "col-lg-8 col-lg-offset-2">
+                    <p>Questions?</p>
+                    <p>Say hello!</p>
+                    <p><a class="fa fa-2x fa-envelope-square" href=""></a> <a class="fa fa-2x fa-twitter-square" href=""></a> <a class="fa fa-2x fa-facebook-square" href=""></a></p>
+                    <p class = "love">Made with love.</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/velocity.min.js"></script>
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script>
+            //Source: http://codepen.io/markhillard/details/iqnlh
+            $(document).ready(function() {
+                // bind click event to all internal page anchors
+                $("a[href*=#]").bind("click", function(e) {
+                    // prevent default action and bubbling
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // set target to anchor's "href" attribute
+                    var target = $(this).attr("href");
+                    // scroll to each target
+                    $(target).velocity("scroll", {
+                        duration: 500,
+                        offset: -40,
+                        easing: "ease-in-out"
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
