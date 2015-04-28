@@ -33,7 +33,7 @@
 }
 
 $footerHeight: 200px;
-
+$green: #54B948;
 // General CSS rules
 html {
     position: relative;
@@ -68,9 +68,9 @@ p{
     font-size: 20px;
 }
 a{
-    color: #00c0ff;
+    color: $green;
     &:hover{
-        color: #63d9ff;
+        color: lighten($green, 20%);
         text-decoration: none;
     }
     &:focus{
@@ -78,6 +78,15 @@ a{
     }
 }
 
+a.btn.btn-default{
+    background-color: $green;
+    border-color: $green;
+    color: white;
+    &:hover{
+        background-color: lighten($green, 20%);
+        color: black;
+    }
+}
 /*
 -webkit-animation: BackgroundAnimation 20s ease infinite;
 -moz-animation: BackgroundAnimation 20s ease infinite;
@@ -133,32 +142,17 @@ header{
         background: linear-gradient(123deg, #13d09f, #8a58d9);
         z-index: -2;
     }
-    .background-overlay-dots{
-        width:100%;
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        min-height:100vh;
-            background-image: url('../img/overlay.png');
-        z-index: -1;
-    }
     
     button{
         background-color: black;
-    }
-    a.fa{
-        color: azure;
-        padding-bottom: 20px;
-        &:hover{
-            color: black;
-        }
     }
 }
 
 section.about{
     td, th{
         color: white;
+        text-align: center;
+        width: 50%;
     }
     background: url('../img/waterloo-campus.png');
     background-color: black;
@@ -256,4 +250,5 @@ footer{
         }
     }
 }
+
 
