@@ -150,8 +150,10 @@ header{
         border: 0;
         font-size: 20px;
         padding: 10px 20px 10px 20px;
+        color: white;
         &:hover{
             background: lighten($green, 20%);
+            color: black;
         }
     }
 }

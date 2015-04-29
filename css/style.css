@@ -5041,9 +5041,11 @@ header {
     background: #54B948;
     border: 0;
     font-size: 20px;
-    padding: 10px 20px 10px 20px; }
+    padding: 10px 20px 10px 20px;
+    color: white; }
     header a.typeform-share.button:hover {
-      background: #99d592; }
+      background: #99d592;
+      color: black; }
 
 section.about {
   background: url('../img/waterloo-campus.png');
