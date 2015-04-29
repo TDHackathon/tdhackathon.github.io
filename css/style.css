@@ -5020,14 +5020,13 @@ header {
       width: 250px;
       height: auto;
       margin: auto; }
-  header .background-overlay {
+  header #background-overlay {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     min-height: 100vh;
-    background: linear-gradient(123deg, #13d09f, #8a58d9);
     z-index: -2; }
   header button {
     background-color: black; }
