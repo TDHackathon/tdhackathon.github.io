@@ -4903,46 +4903,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-@-webkit-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
-@-moz-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
-@-o-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
-@keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
 html {
   position: relative;
   min-height: 100%;
@@ -4950,10 +4910,6 @@ html {
 
 body {
   margin-bottom: 200px; }
-
-h1, h2, h3, h4, p, a {
-  font-family: Arimo, Arial, sans-serif;
-  font-weight: 700; }
 
 h1 {
   font-size: 70px;
@@ -4981,18 +4937,17 @@ a {
   a:focus {
     text-decoration: none; }
 
-/*
--webkit-animation: BackgroundAnimation 20s ease infinite;
--moz-animation: BackgroundAnimation 20s ease infinite;
--o-animation: BackgroundAnimation 20s ease infinite;
-animation: BackgroundAnimation 20s ease infinite;
-background-size: 400% 400%;
-*/
 .fa {
   display: inline-block; }
 
 .venue {
   color: azure; }
+
+hr {
+  border-top: 1px solid black; }
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  border-color: #757575; }
 
 header {
   transform: translateZ(0);
@@ -5000,12 +4955,7 @@ header {
   padding-bottom: 30px;
   display: flex;
   align-items: center;
-  color: azure;
-  font-family: Arimo, Arial, sans-serif;
-  font-weight: 700;
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
+  color: azure; }
   header .read-more {
     position: absolute;
     bottom: 0;
@@ -5028,8 +4978,6 @@ header {
     right: 0;
     min-height: 100vh;
     z-index: -2; }
-  header button {
-    background-color: black; }
   header a.typeform-share.button {
     display: inline-block;
     text-align: center;
@@ -5041,47 +4989,35 @@ header {
     border: 0;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
-    color: white; }
+    color: white;
+    transition: ease-out 0.4s all;
+    -webkit-transition: ease-out 0.4s all;
+    -moz-transition: ease-out 0.4s all;
+    -o-transition: ease-out 0.4s all; }
     header a.typeform-share.button:hover {
       background: #99d592;
       color: black; }
 
-section.about {
-  background: url('../img/waterloo-campus.png');
-  background-color: black;
-  color: white;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-attachment: fixed;
-  background-position: center bottom;
+section.schedule {
+  background: #F3E8EE;
   padding-top: 30px;
   padding-bottom: 30px; }
-  section.about td, section.about th {
-    color: white;
+  section.schedule td, section.schedule th {
+    color: black;
     text-align: center;
     width: 50%; }
-  section.about h1, section.about h2, section.about p {
-    color: azure; }
+  section.schedule h1, section.schedule h2, section.schedule p {
+    color: black; }
 
 section.faq {
   background: linear-gradient(123deg, #34d98d, #daffb6);
   padding-top: 30px;
-  padding-bottom: 30px;
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
+  padding-bottom: 30px; }
   section.faq p.question {
-    font-family: Arimo, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 5px; }
   section.faq p.answer {
-    font-family: Arimo, Arial, sans-serif;
-    font-weight: 400;
     margin-bottom: 20px; }
-  section.faq .white_tint {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px; }
 
 footer {
   width: 100%;
@@ -5094,9 +5030,7 @@ footer {
   text-align: center;
   color: white; }
   footer .love {
-    margin-top: 20px;
-    font-family: Arimo, Arial, sans-serif;
-    font-weight: 400; }
+    margin-top: 20px; }
 
 @media (max-width: 800px) {
   h1 {
@@ -5119,10 +5053,6 @@ footer {
   header a.fa {
     padding-bottom: 0; }
   section.about {
-    background-size: auto; }
-  section.faq {
-    background-color: rgba(255, 255, 255, 0.3); }
-    section.faq .white_tint {
-      background-color: transparent; } }
+    background-size: auto; } }
 
 /*# sourceMappingURL=style.css.map */
