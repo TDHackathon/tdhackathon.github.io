@@ -4926,8 +4926,8 @@ h3 {
 h4 {
   font-size: 20px; }
 
-p {
-  font-size: 20px; }
+p, th, td {
+  font-size: 18px; }
 
 a {
   color: #54B948; }
@@ -5006,7 +5006,7 @@ section.schedule {
     color: black;
     text-align: center;
     width: 50%; }
-  section.schedule h1, section.schedule h2, section.schedule p {
+  section.schedule h1, section.schedule h2, section.schedule h4, section.schedule p {
     color: black; }
 
 section.faq {
@@ -5015,7 +5015,8 @@ section.faq {
   padding-bottom: 30px; }
   section.faq p.question {
     font-weight: bold;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-size: 20px; }
   section.faq p.answer {
     margin-bottom: 20px; }
 
