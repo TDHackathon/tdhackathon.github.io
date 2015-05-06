@@ -5013,6 +5013,8 @@ section.faq {
   background: linear-gradient(123deg, #34d98d, #daffb6);
   padding-top: 30px;
   padding-bottom: 30px; }
+  section.faq .prizes {
+    text-align: center; }
   section.faq p.question {
     font-weight: bold;
     margin-bottom: 5px;
