@@ -4954,7 +4954,9 @@ header {
   min-height: 100vh;
   padding-bottom: 30px;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
+  -webkit-align-items: center;
   color: azure; }
   header .read-more {
     position: absolute;
